@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 내 마음의 색깔 기록</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>내 마음의 색깔 기록하기 🎨</h1>
+
+        <h2>오늘의 기분 색깔은?</h2>
+        <div id="emotion-palette" class="palette">
+            </div>
+        
+        <div id="memo-area">
+            <textarea id="emotion-memo" placeholder="선택한 색깔에 대해 한 줄 메모를 남겨보세요. (선택 사항)" maxlength="100"></textarea>
+            <button id="save-button" disabled>✅ 기록하기</button>
+            
+            <p id="feedback-message" class="hidden"></p>
+        </div>
+        
+        <hr>
+
+        <h2>나의 감정 기록 📝</h2>
+        <button id="clear-history-button" class="clear-button">🗑️ 모든 기록 삭제</button>
+        
+        <div id="history-display" class="history-grid">
+            </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
